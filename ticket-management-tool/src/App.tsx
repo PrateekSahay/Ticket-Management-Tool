@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.scss';
-import {Button} from '@material-ui/core';
 import TicketList from './components/TicketList/TicketList';
+import TicketDetails from './components/TicketDetails/TicketDetails';
 
 function App() {
   return (
     <div className="App">
-      <Button variant="contained" color="primary" href="#contained-buttons">
-        Link
-      </Button>
+      <TicketDetails />
       <TicketList />
     </div>
   );
