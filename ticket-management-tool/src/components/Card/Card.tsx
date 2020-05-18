@@ -27,8 +27,8 @@ export class SimpleCard extends Component<ColorProp> {
     render() {
         return (
             <div>
-                <Card>
-                    <CardContent color="colorToAssign">
+                <Card className="CardStyle">
+                    <CardContent>
                         <Typography className="CounterWrapper" color="textSecondary" gutterBottom>
                             <b className = "Counter">{this.props.counter}</b>
                         </Typography>

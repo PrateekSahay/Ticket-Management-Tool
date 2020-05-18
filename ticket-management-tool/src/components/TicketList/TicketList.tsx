@@ -48,7 +48,7 @@ export class TicketList extends Component<{},IState> {
                             <TableRow>
                                 <TableCell align="left"><b>Ticket Id</b></TableCell>
                                 <TableCell align="center"><b>Status&nbsp;</b></TableCell>
-                                <TableCell align="right"><b>Created&nbsp;(g)</b></TableCell>            
+                                <TableCell align="right"><b>Created&nbsp;</b></TableCell>            
                             </TableRow>
                         </TableHead>
                         <TableBody>
