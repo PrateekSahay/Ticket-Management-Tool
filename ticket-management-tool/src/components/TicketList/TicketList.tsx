@@ -46,7 +46,7 @@ export class TicketList extends Component<{},IState> {
                     <Table className = "table" aria-label="simple table">
                         <TableHead>
                             <TableRow>
-                                <TableCell align="left"><b>Ticket Id</b></TableCell>
+                                <TableCell align="left"><b>Title</b></TableCell>
                                 <TableCell align="center"><b>Status&nbsp;</b></TableCell>
                                 <TableCell align="right"><b>Created&nbsp;</b></TableCell>            
                             </TableRow>
@@ -54,7 +54,7 @@ export class TicketList extends Component<{},IState> {
                         <TableBody>
                             {this.state.tickets.map((ticket) => (
                                 <TableRow key={ticket.id}>
-                                    <TableCell component="th" scope="row" align ="left">{ticket.id}</TableCell>
+                                    <TableCell component="th" scope="row" align ="left">{ticket.title}</TableCell>
                                     <TableCell align="center">{ticket.status}</TableCell>
                                     <TableCell align="right">{ticket.created}</TableCell>              
                                 </TableRow>
