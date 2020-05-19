@@ -31,7 +31,7 @@ export default function ButtonAppBar() {
         <Toolbar>
             <img width="100px" src = "https://ww2-secure.justanswer.com/static/fe/ja-logo/ja-logo-white-text.png" alt="Just Answer"/>            
           <Typography variant="h6" className={classes.title}>
-          <b className = "heading">Ticket Management Tool</b>
+          <b className = "heading">Just Tickets</b>
           </Typography>
           <Avatar className = "avatar" alt="Remy Sharp" src="/broken-image.jpg">P </Avatar>
         </Toolbar>
