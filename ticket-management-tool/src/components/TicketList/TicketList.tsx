@@ -15,7 +15,7 @@ type IProps = {
 
 export class TicketList extends Component<IProps,IState> {
     constructor(props : IProps){
-        super(props);
+        super(props);        
         this.getTickets = this.getTickets.bind(this);
         this.clickTicket = this.clickTicket.bind(this);
         this.state = {
@@ -44,6 +44,9 @@ export class TicketList extends Component<IProps,IState> {
         );
     }
     render() {
+        if(Object.keys(this.state.tickets).length <= 0) {
+                return <> </>
+        }
         return (                
             <>                
                 <TableContainer component={Paper} className="tableContainer">
@@ -65,7 +68,7 @@ export class TicketList extends Component<IProps,IState> {
                             ))}
                         </TableBody>
                     </Table>
-                </TableContainer>
+                </TableContainer>                
             </>
         )
     }
