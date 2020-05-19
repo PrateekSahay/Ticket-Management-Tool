@@ -9,8 +9,12 @@ type IState = {
     tickets? : ITicket []
 }
 
-export class TicketList extends Component<{},IState> {
-    constructor(props : {}){
+type IProps = {
+    incrementCount(val : number) : void
+}
+
+export class TicketList extends Component<IProps,IState> {
+    constructor(props : IProps){
         super(props);
         this.getTickets = this.getTickets.bind(this);
         this.clickTicket = this.clickTicket.bind(this);
@@ -35,13 +39,13 @@ export class TicketList extends Component<{},IState> {
         });
         console.log(data);
         console.log(this.state);
+        this.props.incrementCount(Object.keys(this.state.tickets).length);
         }
         );
     }
     render() {
         return (                
-            <>
-                <h2 className = "HeaderTicket">Tickets</h2>
+            <>                
                 <TableContainer component={Paper} className="tableContainer">
                     <Table className = "table" aria-label="simple table">
                         <TableHead>

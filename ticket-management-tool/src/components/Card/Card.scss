@@ -1,8 +1,15 @@
 .Counter{
-    font-weight: 200;
-    width: 10px;
+    font-size: xx-large;    
 }
 
-.CardStyle{
-    background: blanchedalmond;
+.ticketOpenCard{
+    background:antiquewhite !important;
 }
+
+.ticketClosedCard{
+    background:lemonchiffon !important;
+}
+
+.agentOnlineCard{
+    background:burlywood !important;
+}   
