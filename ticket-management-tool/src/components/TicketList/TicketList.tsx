@@ -49,9 +49,9 @@ export class TicketList extends Component<IProps,IState> {
                 <TableContainer component={Paper} className="tableContainer">
                     <Table className = "table" aria-label="simple table">
                         <TableHead>
-                            <TableRow>
+                            <TableRow className = "tableheadrow">
                                 <TableCell align="left"><b>Title</b></TableCell>
-                                <TableCell align="center"><b>Status&nbsp;</b></TableCell>
+                                <TableCell align="left"><b>Status&nbsp;</b></TableCell>
                                 <TableCell align="right"><b>Created&nbsp;</b></TableCell>            
                             </TableRow>
                         </TableHead>
@@ -59,9 +59,9 @@ export class TicketList extends Component<IProps,IState> {
                             {this.state.tickets.map((ticket) => (
                                 <TableRow key={ticket.id}>
                                     <TableCell component="th" scope="row" align ="left">{ticket.title}</TableCell>
-                                    <TableCell align="center">{ticket.status}</TableCell>
-                                    <TableCell align="right">{ticket.created}</TableCell>              
-                                </TableRow>
+                                    <TableCell align="left">{ticket.status}</TableCell>
+                                    <TableCell align="right">{ticket.created.substring(0,10) + " : " + ticket.created.substring(11,19)}</TableCell>              
+                                </TableRow> 
                             ))}
                         </TableBody>
                     </Table>
@@ -70,7 +70,8 @@ export class TicketList extends Component<IProps,IState> {
         )
     }
 }
-
+// ticket.created.toDateString()+ticket.created.toTimeString()
+// ticket.created.substring(0,10) + " : " + ticket.created.substring(11,19)
 export default TicketList
 
 // <>

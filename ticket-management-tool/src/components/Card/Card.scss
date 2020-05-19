@@ -4,12 +4,24 @@
 
 .ticketOpenCard{
     background:antiquewhite !important;
+    opacity: 0.9;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .ticketClosedCard{
     background:lemonchiffon !important;
+    opacity: 0.9;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .agentOnlineCard{
     background:burlywood !important;
+    opacity: 0.9;
+    &:hover{
+        opacity: 1;
+    }
 }   

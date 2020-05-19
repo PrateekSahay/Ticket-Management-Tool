@@ -17,7 +17,7 @@ import ButtonAppBar from './components/NavBar/NavBar'
 // export default App;
 
 type IState = {
-  ticketCount : number
+  ticketCount? : number
 }
 
 export class App extends Component<{},IState> {
@@ -25,7 +25,7 @@ export class App extends Component<{},IState> {
       super(props);
       this.updateCount = this.updateCount.bind(this);
       this.state = {
-        ticketCount : 9
+        ticketCount : 0
       }
   }
 

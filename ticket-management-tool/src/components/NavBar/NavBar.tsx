@@ -29,10 +29,7 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static" className = "Appbar">
         <Toolbar>
-            <img src = "../../Images/favicon.png" alt="Just Answer"/>            
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+            <img width="100px" src = "https://ww2-secure.justanswer.com/static/fe/ja-logo/ja-logo-white-text.png" alt="Just Answer"/>            
           <Typography variant="h6" className={classes.title}>
           <b className = "heading">Ticket Management Tool</b>
           </Typography>
